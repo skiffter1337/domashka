@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/domashka/static/css/main.3b8ff258.css",
-    "main.js": "/domashka/static/js/main.a7202e69.js",
+    "main.css": "/domashka/static/css/main.abac04f1.css",
+    "main.js": "/domashka/static/js/main.491538c6.js",
     "static/js/787.66cb4309.chunk.js": "/domashka/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/domashka/static/media/avatar.d947cb9d0d13765666b6.png",
+    "static/media/checked.svg": "/domashka/static/media/checked.b75ca55e8759862b4083.svg",
     "index.html": "/domashka/index.html",
-    "main.3b8ff258.css.map": "/domashka/static/css/main.3b8ff258.css.map",
-    "main.a7202e69.js.map": "/domashka/static/js/main.a7202e69.js.map",
+    "main.abac04f1.css.map": "/domashka/static/css/main.abac04f1.css.map",
+    "main.491538c6.js.map": "/domashka/static/js/main.491538c6.js.map",
     "787.66cb4309.chunk.js.map": "/domashka/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b8ff258.css",
-    "static/js/main.a7202e69.js"
+    "static/css/main.abac04f1.css",
+    "static/js/main.491538c6.js"
   ]
 }
