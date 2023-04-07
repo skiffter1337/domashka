@@ -1,0 +1,37 @@
+.input:focus {
+}
+
+.input {
+    width: 372px;
+    height: 36px;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+
+}
+
+.inputWrapper {
+}
+
+.superInput {
+
+}
+
+.errorInput {
+    border: 2px solid #CC1439;
+}
+
+.errorInput:focus {
+    border: 2px solid #CC1439;
+}
+
+.error {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: large;
+    line-height: 12px;
+
+
+
+    color: #CC1439;
+}

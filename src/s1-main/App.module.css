@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    --header_height: 60px;
+    max-width: 100%;
+
+
+}
+
+.hw {
+
+}
+
+.hwTitle {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+
+    padding-left: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+.hr1 {
+
+}
+
+.hr2 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.hr3 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.hr4 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.hr5 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.hr6_1 {
+    margin-bottom: 50px;
+}
+
+
+.hr6_2 {
+    margin-top: 300px;
+    margin-bottom: 50px;
+}
+
+
+.hr6_2 {
+    margin-bottom: 50px;
+}
+
+.hr7_1 {
+    margin-bottom: 50px;
+}
+
+.hr7_2 {
+    margin-top: 300px;
+    margin-bottom: 50px;
+}
+
+.hr7_1 {
+    margin-bottom: 50px;
+}
+
+.hr8_2 {
+    margin-top: 300px;
+    margin-bottom: 50px;
+}
+
+.hr9_1 {
+    margin-bottom: 50px;
+}
+
+.hr9_2 {
+    margin-top: 300px;
+    margin-bottom: 50px;
+}
+
+.hr10_1 {
+    margin-bottom: 50px;
+}
+
+.hr10_2 {
+    margin-top: 300px;
+    margin-bottom: 50px;
+}
+
+
