@@ -13,7 +13,7 @@ const HW10 = () => {
 
     const dispatch = useDispatch()
     const isLoading = useSelector<AppStoreType, boolean>(state => state.loading.isLoading)
-    console.log(isLoading)
+
     const setLoading = () => {
         dispatch(loadingAC(isLoading))
         setTimeout(() => {
