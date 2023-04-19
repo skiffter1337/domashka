@@ -13,7 +13,7 @@ import {AppStoreType} from "../hw10/bll/store";
 * 4 - передать пропсы в SuperSelect
 * */
 
-const themes = [
+const themes: {id: number, value: 'light' | 'blue' | 'dark'}[] = [
     {id: 1, value: 'light'},
     {id: 2, value: 'blue'},
     {id: 3, value: 'dark'},
@@ -21,11 +21,11 @@ const themes = [
 
 const HW12 = () => {
     // взять ид темы из редакса
-    const themeId = useSelector<AppStoreType, string>(state => state.theme.themeId)
-    console.log(themeId)
+    const themeId = useSelector<AppStoreType, number>(state => state.theme.themeId)
+
     const dispatch = useDispatch()
-    const change = (id: string) => { // дописать функцию
-        dispatch(changeThemeId(id))
+    const change = (id: number) => { // дописать функцию
+        dispatch(changeThemeId(+id))
     }
 
     useEffect(() => {
@@ -36,7 +36,7 @@ const HW12 = () => {
         <div id={'hw12'}>
 
             <div id={'hw12-text'} className={s2.hwTitle}>
-                Homework #12
+                Homework #12 -
             </div>
             <hr className={s2.hr10_1}/>
             <div className={s2.hw}>
