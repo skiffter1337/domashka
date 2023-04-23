@@ -24,7 +24,7 @@ const HW13 = () => {
         const url =
             x === null
                 ? 'https://xxxxxx.ccc' // имитация запроса на не корректный адрес
-                : 'https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test'
+                : 'https://samurai.it-incubator.io/api/3.0/homework/test'
 
         setCode('')
         setImage('')
@@ -34,13 +34,37 @@ const HW13 = () => {
         axios
             .post(url, {success: x})
             .then((res) => {
+                debugger
                 setCode('Код 200!')
+                setText(res.data.errorText)
+                setInfo(res.data.info)
                 setImage(success200)
-                // дописать
 
             })
             .catch((e) => {
-                // дописать
+                debugger
+                console.log(e)
+                console.log(x)
+                if (x === false) {
+                    setCode(e.code)
+                    setText(e.message)
+                    setInfo("эмитация ошибки на сервере ошибка 500 - обычно означает что что-то сломалось на сервере, например база данных)")
+                    setImage(error500)
+                }
+                if (x === undefined) {
+                    setCode(e.code)
+                    setText(e.message)
+                    setInfo("Ты не отправил success в body вообще! ошибка 400 - обычно означает что скорее всего фронт отправил что-то не то на бэк!")
+                    setImage(error400)
+
+                }
+                if (x === null) {
+                    setCode(e.code)
+                    setText(e.message)
+                    setInfo(e.name)
+                    setImage(errorUnknown)
+
+                }
 
             })
     }
@@ -55,7 +79,7 @@ const HW13 = () => {
                         id={'hw13-send-true'}
                         onClick={send(true)}
                         xType={'secondary'}
-                        // дописать
+                        disabled={info === '...loading'}
 
                     >
                         Send true
@@ -64,7 +88,7 @@ const HW13 = () => {
                         id={'hw13-send-false'}
                         onClick={send(false)}
                         xType={'secondary'}
-                        // дописать
+                        disabled={info === '...loading'}
 
                     >
                         Send false
@@ -73,7 +97,7 @@ const HW13 = () => {
                         id={'hw13-send-undefined'}
                         onClick={send(undefined)}
                         xType={'secondary'}
-                        // дописать
+                        disabled={info === '...loading'}
 
                     >
                         Send undefined
@@ -82,7 +106,7 @@ const HW13 = () => {
                         id={'hw13-send-null'}
                         onClick={send(null)} // имитация запроса на не корректный адрес
                         xType={'secondary'}
-                        // дописать
+                        disabled={info === '...loading'}
 
                     >
                         Send null
