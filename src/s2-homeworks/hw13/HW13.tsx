@@ -35,7 +35,7 @@ const HW13 = () => {
             .post(url, {success: x})
             .then((res) => {
                 debugger
-                setCode('Код 200!')
+                setCode('Code 200!')
                 setText(res.data.errorText)
                 setInfo(res.data.info)
                 setImage(success200)
@@ -46,13 +46,13 @@ const HW13 = () => {
                 console.log(e)
                 console.log(x)
                 if (x === false) {
-                    setCode(e.code)
+                    setCode(`"Code" ${e.status}`)
                     setText(e.message)
                     setInfo("эмитация ошибки на сервере ошибка 500 - обычно означает что что-то сломалось на сервере, например база данных)")
                     setImage(error500)
                 }
                 if (x === undefined) {
-                    setCode(e.code)
+                    setCode(`"Code" ${e.status}`)
                     setText(e.message)
                     setInfo("Ты не отправил success в body вообще! ошибка 400 - обычно означает что скорее всего фронт отправил что-то не то на бэк!")
                     setImage(error400)
@@ -71,7 +71,7 @@ const HW13 = () => {
 
     return (
         <div id={'hw13'}>
-            <div className={s2.hwTitle}>Homework #13 </div>
+            <div className={s2.hwTitle}>Homework #13! </div>
 
             <div className={s2.hw}>
                 <div className={s.buttonsContainer}>
