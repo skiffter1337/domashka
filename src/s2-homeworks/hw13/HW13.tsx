@@ -46,15 +46,16 @@ const HW13 = () => {
                 console.log(e)
                 console.log(x)
                 if (x === false) {
-                    setCode(`"Code" ${e.status}`)
-                    setText(e.message)
-                    setInfo("эмитация ошибки на сервере ошибка 500 - обычно означает что что-то сломалось на сервере, например база данных)")
+                    setCode(`Code ${e.response.status}`)
+                    setText("эмитация ошибки на сервере")
+                    setInfo("ошибка 500 - обычно означает что что-то сломалось на сервере, например база данных)")
+
                     setImage(error500)
                 }
                 if (x === undefined) {
-                    setCode(`"Code" ${e.status}`)
-                    setText(e.message)
-                    setInfo("Ты не отправил success в body вообще! ошибка 400 - обычно означает что скорее всего фронт отправил что-то не то на бэк!")
+                    setCode(`Code ${e.response.status}`)
+                    setText("Ты не отправил success в body вообще!")
+                    setInfo("ошибка 400 - обычно означает что скорее всего фронт отправил что-то не то на бэк!")
                     setImage(error400)
 
                 }
