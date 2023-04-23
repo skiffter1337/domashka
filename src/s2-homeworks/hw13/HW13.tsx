@@ -72,9 +72,9 @@ const HW13 = () => {
 
     return (
         <div id={'hw13'}>
-            <div className={s2.hwTitle}>Homework #13!</div>
-
-            <div className={s2.hw}>
+            <div className={s2.hwTitle}>Homework #13</div>
+            <hr className={s2.hr10_1}/>
+            <div className={s.hw}>
                 <div className={s.buttonsContainer}>
                     <SuperButton
                         id={'hw13-send-true'}
@@ -132,6 +132,7 @@ const HW13 = () => {
                     </div>
                 </div>
             </div>
+            <hr className={s2.hr10_1}/>
         </div>
     )
 }
