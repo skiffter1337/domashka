@@ -1,7 +1,19 @@
-.tech {
+.hw14 {
 
+
+    min-height: 40vh;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+.tech {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .loading {
-
+    margin-left: 320px;
 }
